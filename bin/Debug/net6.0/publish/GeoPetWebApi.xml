@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GeoPetWebApi</name>
+    </assembly>
+    <members>
+        <member name="M:GeoPetWebApi.Controllers.LoginController.Login(GeoPetWebApi.Controllers.inputs.LoginInput)">
+            <summary>Rota para fazer login de usuário</summary>
+            <response code="200"> retorna o token gerado</response>
+            <response code="401">retorna um objeto com uma mensagem de erro </response>
+        </member>
+        <member name="M:projetoFinal.Controllers.PessoaCuidadoraController.CreatePessoaCuidadora(projetoFinal.Controllers.inputs.PessoaCuidadoraInput)">
+            <summary>Cria Pessoas Cuidadoras</summary>
+            <response code="201"> retorna um objeto com a quantidade de linhas afetadas</response>
+            <response code="400"> retorna um objeto com uma mensagem de erro</response>
+        </member>
+        <member name="M:projetoFinal.Controllers.PessoaCuidadoraController.GetAll">
+            <summary>Retorna todas as pessoas cuidadoras cadastradas no bd</summary>
+            <response code="200"> retorna uma lista de pesssoas cuidadoras</response>
+            <response code="404">retorna um objeto com uma mensagem de erro </response>
+        </member>
+        <member name="M:projetoFinal.Controllers.PetController.AddPet(projetoFinal.Controllers.inputs.PetInput)">
+            <summary>Rota para fazer inserção de pet</summary>
+            <response code="201"> Pet foi inserido corretamente </response>
+            <response code="400"> Requisição no formato errado </response>
+        </member>
+    </members>
+</doc>
